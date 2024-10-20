@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+<h2>Czy na pewno chcesz usunąć ten artykuł?</h2>
+<p>{{ post.title }}</p>
+<p>{{ post.created_at }}</p>
+
+<form method="POST">
+  {% csrf_token %}
+  <button type="submit">Tak, usuń</button>
+  <a href="{% url 'user_articles' %}">Nie, wróć do listy artykułów</a>
+</form>
+{% endblock %}

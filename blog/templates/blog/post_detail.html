@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+<p>
+  Autor: {{ post.author.username }} | Data publikacji: {{ post.created_at }}
+</p>
+{% if user.is_authenticated and post.author == user %}
+<a href="{% url 'post_update' post.pk %}">Edytuj</a>
+{% endif %} {% if user.is_authenticated and post.author == user %}
+<a
+  href="{% url 'delete_post' post.pk %}"
+  onclick="return confirm('Czy na pewno chcesz usunąć ten post?')"
+  >Usuń</a
+>
+{% endif %} {% endblock %}

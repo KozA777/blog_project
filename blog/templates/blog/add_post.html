@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<h2>Dodaj nowy artykuł</h2>
+
+<form method="POST">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Dodaj artykuł</button>
+</form>
+
+<a href="{% url 'user_articles' %}">Powrót do moich artykułów</a>
+{% endblock %}

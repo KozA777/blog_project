@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .banner {
+    background-color: #ffc107;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .banner h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  button,
+  a {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 8px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+  }
+  
+  button:hover,
+  a:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  .red-btn {
+    background-color: #dc3545;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 8px;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .red-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .post-title {
+    font-size: 18px;
+    color: #007bff; 
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .post-title:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .navbar {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  .edit-btn {
+    background-color: #007bff; 
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+.article-title {
+  display: inline-block; 
+  color: #000;           
+  text-decoration: none; 
+}
+
+.article-title:hover {
+  text-decoration: underline; 
+}
+
+  
