@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Moje artykuły</h2>
+<a href="{% url 'add_post' %}">Dodaj nowy artykuł</a>
+<ul>
+  {% for post in posts %}
+  <li>
+    <a href="{% url 'post_detail' post.pk %}" class="post-title"
+      >{{ post.title }}</a
+    >
+    <a href="{% url 'edit_post' post.pk %}" class="red-btn">Edytuj</a>
+    <a
+      href="{% url 'delete_post' post.pk %}"
+      class="red-btn"
+      onclick="return confirm('Czy na pewno chcesz usunąć ten post?')"
+      >Usuń</a
+    >
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
